@@ -5,13 +5,13 @@
 #
 
 # Name of this project
-name : Terraform Aws Acm
+name : Terraform helm module
 
 # License of this project
 license: "APACHE"
 
 # Canonical GitHub repo
-github_repo: clouddrove/terraform-aws-acm
+github_repo: clouddrove/terraform-helm-module
 
 # Badges to display
 badges:
@@ -30,7 +30,7 @@ badges:
 
 #  description of this project
 description: |-
-  This terraform module is used for requesting or importing SSL/TLS certificate with validation.
+  This terraform module is used for helm deploy.
 
 # extra content
 include:
@@ -39,7 +39,7 @@ include:
 # How to use this project
 usage : |-
   Here are some examples of how you can use this module in your inventory structure:
-  ### ACM with DNS
+  ### helm module
   ```hcl
   module "helm_deploy" {
     source          = "../"
