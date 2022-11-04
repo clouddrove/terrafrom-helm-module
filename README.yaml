@@ -5,13 +5,13 @@
 #
 
 # Name of this project
-name : Terraform helm module
+name: terrafrom helm module
 
 # License of this project
 license: "APACHE"
 
 # Canonical GitHub repo
-github_repo: clouddrove/terraform-helm-module
+github_repo: clouddrove/terrafrom-helm-module
 
 # Badges to display
 badges:
@@ -22,21 +22,22 @@ badges:
     image: "https://img.shields.io/badge/License-APACHE-blue.svg"
     url: "LICENSE.md"
   - name: "tfsec"
-    image: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/tfsec.yml/badge.svg"
-    url: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/tfsec.yml"
+    image: "https://github.com/clouddrove/terrafrom-helm-module/actions/workflows/tfsec.yml/badge.svg"
+    url: "https://github.com/clouddrove/terrafrom-helm-module/actions/workflows/tfsec.yml"
   - name: "static-checks"
-    image: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/terraform.yml/badge.svg"
-    url: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/terraform.yml"
+    image: "https://github.com/clouddrove/terrafrom-helm-module/actions/workflows/terraform.yml/badge.svg"
+    url: "https://github.com/clouddrove/terrafrom-helm-module/actions/workflows/terraform.yml"
 
 #  description of this project
+# yamllint disable rule:line-length
 description: |-
-  This terraform module is used for helm deploy.
-
+  Terraform module to create an helm.
 # extra content
 include:
   - "terraform.md"
 
 # How to use this project
+# yamllint disable rule:line-length
 usage : |-
   Here are some examples of how you can use this module in your inventory structure:
   ### helm module
