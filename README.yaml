@@ -1,0 +1,60 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name : Terraform Aws Acm
+
+# License of this project
+license: "APACHE"
+
+# Canonical GitHub repo
+github_repo: clouddrove/terraform-aws-acm
+
+# Badges to display
+badges:
+  - name: "Terraform"
+    image: "https://img.shields.io/badge/Terraform-v1.1.7-green"
+    url: "https://www.terraform.io"
+  - name: "Licence"
+    image: "https://img.shields.io/badge/License-APACHE-blue.svg"
+    url: "LICENSE.md"
+  - name: "tfsec"
+    image: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/tfsec.yml/badge.svg"
+    url: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/tfsec.yml"
+  - name: "static-checks"
+    image: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/terraform.yml/badge.svg"
+    url: "https://github.com/clouddrove/terraform-helm-module/actions/workflows/terraform.yml"
+
+#  description of this project
+description: |-
+  This terraform module is used for requesting or importing SSL/TLS certificate with validation.
+
+# extra content
+include:
+  - "terraform.md"
+
+# How to use this project
+usage : |-
+  Here are some examples of how you can use this module in your inventory structure:
+  ### ACM with DNS
+  ```hcl
+  module "helm_deploy" {
+    source          = "../"
+    name            = "metrics-server"
+    repository      = "https://charts.bitnami.com/bitnami"
+    chart           = "metrics-server"
+    chart_version   = "5.0.1"
+    namespace       = "kube-system"
+    config_path     = "./kubeconfig/kube_cluster.yaml"
+
+    values         = [
+      <<-EOF
+      fullnameOverride: metrics-server
+      EOF
+    ]
+
+  }
+  ```
