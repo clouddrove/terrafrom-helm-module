@@ -13,7 +13,7 @@ variable "repository" {
 
 variable "namespace" {
   description = "The namespace to deploy to"
-  default = "default"
+  default     = "default"
 }
 
 variable "chart_version" {
